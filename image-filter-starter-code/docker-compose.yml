@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  api:
+    container_name: cloud-developer-my-instagram-aws
+    build: .
+    volumes:
+      - ./:/cloud-developer-my-instagram-aws
+    ports:
+      - "3000:3000"
